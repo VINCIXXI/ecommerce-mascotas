@@ -1,0 +1,178 @@
+* {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: #F8F9FA; /* Color pastel */
+}
+
+/* Estilo para el carrusel */
+.carousel-inner {
+    height: 400px;
+}
+
+/* Estilo para el logo */
+.navbar-brand img {
+    transform: scale(2.0);
+}
+
+/* Estilo para las categorías */
+.category-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
+    margin: 20px 0;
+}
+
+.category {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    flex: 0 0 auto; /* Evita que las categorías se envuelvan */
+}
+
+.category img {
+    position: relative;
+    z-index: 1;
+}
+
+.category::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0; 
+    border-radius: 50%;
+    transform: translate(-50%, -80%);
+    z-index: 0;
+}
+
+/* Colores específicos para cada categoría */
+.category-1::before {
+    background-color: #ffcccc; /* Color para Perros */
+}
+
+.category-2::before {
+    background-color: #ccffcc; /* Color para Gatos */
+}
+
+.category-3::before {
+    background-color: #ccccff; /* Color para Conejos */
+}
+
+.category-4::before {
+    background-color: #ffffcc; /* Color para Aves */
+}
+
+/* Modificar la clase img-fluid */
+.img-fluid {
+    height: 100px;
+    width: auto; /* Mantener la proporción de la imagen */
+}
+
+/* Estilo para carousel-caption */
+/* Estilo para carousel-caption */
+.carousel-caption {
+    position: absolute;
+    transform: translate(90%,30%);
+    top: 0;
+    right: 0;
+    height: 40%;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0; /* Sin bordes redondeados */
+    color: rgb(44, 44, 44); /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.carousel-caption h5 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 90%;
+}
+
+.carousel-item .dark {
+    position: absolute;
+    transform: translate(90%,0%);
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%; 
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)); /* Fondo degradado negro con opacidad */
+    padding-right: 50px;
+}
+
+.dark h5{
+    padding-top: 60px;
+    color: #ffffcc;
+}
+
+/* Modificar la clase btn-primary */
+.btn-primary {
+    background-color: #ff6961; /* Rojo pastel */
+    border-color: #ff6961; /* Rojo pastel */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #ff5c5c; /* Rojo pastel más oscuro para el hover */
+    border-color: #ff5c5c; /* Rojo pastel más oscuro para el hover */
+}
+
+.btn-car{
+    margin-top: 40px;
+}
+
+/* Estilos para las cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 10px; /* Bordes redondeados */
+}
+/* Estilos para las imágenes dentro de las cards */
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+/* Estilo para el espaciado entre el logo y el texto en el navbar */
+.navbar-brand .ms-1 {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand .ms-1 span {
+    color: #ff6961;
+}
+
+/* Estilo para el espaciado entre el logo y el texto en el navbar */
+.navbar-brand img {
+    padding-left: 10px;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #ffebcd; /* Color pastel */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para los iconos de redes sociales */
+footer .social-icons img {
+    height: 40px;
+    width: auto; /* Mantener la proporción de la imagen */
+}
+/* Estilo para los iconos de redes sociales */
+footer .social-icons a {
+    text-decoration: none;
+}
