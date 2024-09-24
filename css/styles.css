@@ -24,7 +24,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
+    overflow-x: auto; /* Permitie desplazamiento horizontal  */
     margin: 20px 0;
 }
 
@@ -75,10 +75,9 @@ body{
 /* Modificar la clase img-fluid */
 .img-fluid {
     height: 100px;
-    width: auto; /* Mantener la proporción de la imagen */
+    width: auto; /* Mantiene la proporción de la imagen */
 }
 
-/* Estilo para carousel-caption */
 /* Estilo para carousel-caption */
 .carousel-caption {
     position: absolute;
@@ -170,7 +169,7 @@ footer {
 /* Estilo para los iconos de redes sociales */
 footer .social-icons img {
     height: 40px;
-    width: auto; /* Mantener la proporción de la imagen */
+    width: auto; /* Mantiene la proporción de la imagen */
 }
 /* Estilo para los iconos de redes sociales */
 footer .social-icons a {
